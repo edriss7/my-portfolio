@@ -1780,7 +1780,7 @@ function StorybookApp() {
     <div style={s.layout}>
       <div style={s.sidebar}>
         <div style={s.sideHeader}>
-          <a href="/" style={s.homeLink}>\u2190</a>
+          <a href="/" style={s.homeLink}>{'\u2190'}</a>
           <div>
             <div style={s.sideTitle}>React UI Kit</div>
             <div style={s.sideSub}>100 Components</div>
