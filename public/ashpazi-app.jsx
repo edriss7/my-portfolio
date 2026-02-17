@@ -12,7 +12,7 @@ const RECIPES = [
   // === STEWS ===
   {
     id: 1, name: 'Ghormeh Sabzi', nameFA: 'قورمه سبزی',
-    emoji: '🌿', category: 'stew', chef: 'rosa',
+    emoji: '🌿', category: 'stew', chef: 'rosa', calories: 350,
     image: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=60&q=60',
     time: '3 hours', servings: 6, difficulty: 'Medium',
@@ -32,7 +32,7 @@ const RECIPES = [
   },
   {
     id: 2, name: 'Fesenjaan', nameFA: 'فسنجان',
-    emoji: '🌰', category: 'stew', chef: 'najmieh',
+    emoji: '🌰', category: 'stew', chef: 'najmieh', calories: 480,
     image: 'https://images.unsplash.com/photo-1574484284002-952d92456975?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1574484284002-952d92456975?w=60&q=60',
     time: '3 hours', servings: 5, difficulty: 'Medium',
@@ -51,7 +51,7 @@ const RECIPES = [
   },
   {
     id: 3, name: 'Khoresh Bademjan', nameFA: 'خورشت بادمجان',
-    emoji: '🍆', category: 'stew', chef: 'rosa',
+    emoji: '🍆', category: 'stew', chef: 'rosa', calories: 380,
     image: 'https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?w=60&q=60',
     time: '2.5 hours', servings: 5, difficulty: 'Medium',
@@ -71,7 +71,7 @@ const RECIPES = [
   },
   {
     id: 4, name: 'Khoresh Karafs', nameFA: 'خورشت کرفس',
-    emoji: '🥬', category: 'stew', chef: 'rosa',
+    emoji: '🥬', category: 'stew', chef: 'rosa', calories: 320,
     image: 'https://images.unsplash.com/photo-1547592180-85f173990554?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1547592180-85f173990554?w=60&q=60',
     time: '2.5 hours', servings: 5, difficulty: 'Easy',
@@ -89,7 +89,7 @@ const RECIPES = [
   // === KABABS ===
   {
     id: 5, name: 'Chelow Kabab Koobideh', nameFA: 'چلو کباب کوبیده',
-    emoji: '🍖', category: 'kabab', chef: 'rosa',
+    emoji: '🍖', category: 'kabab', chef: 'rosa', calories: 550,
     image: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=60&q=60',
     time: '1.5 hours', servings: 4, difficulty: 'Medium',
@@ -109,7 +109,7 @@ const RECIPES = [
   },
   {
     id: 6, name: 'Joojeh Kabab', nameFA: 'جوجه کباب',
-    emoji: '🐔', category: 'kabab', chef: 'samin',
+    emoji: '🐔', category: 'kabab', chef: 'samin', calories: 420,
     image: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=60&q=60',
     time: '4+ hours', servings: 4, difficulty: 'Easy',
@@ -128,7 +128,7 @@ const RECIPES = [
   },
   {
     id: 7, name: 'Kabab Barg', nameFA: 'کباب برگ',
-    emoji: '🥩', category: 'kabab', chef: 'najmieh',
+    emoji: '🥩', category: 'kabab', chef: 'najmieh', calories: 490,
     image: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=60&q=60',
     time: '6+ hours', servings: 4, difficulty: 'Hard',
@@ -146,7 +146,7 @@ const RECIPES = [
   // === RICE ===
   {
     id: 8, name: 'Tahdig', nameFA: 'ته‌دیگ',
-    emoji: '🍚', category: 'rice', chef: 'samin',
+    emoji: '🍚', category: 'rice', chef: 'samin', calories: 380,
     image: 'https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1516714435131-44d6b64dc6a2?w=60&q=60',
     time: '1.5 hours', servings: 6, difficulty: 'Hard',
@@ -166,7 +166,7 @@ const RECIPES = [
   },
   {
     id: 9, name: 'Zereshk Polo ba Morgh', nameFA: 'زرشک پلو با مرغ',
-    emoji: '🍗', category: 'rice', chef: 'rosa',
+    emoji: '🍗', category: 'rice', chef: 'rosa', calories: 520,
     image: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?w=60&q=60',
     time: '2 hours', servings: 5, difficulty: 'Medium',
@@ -185,7 +185,7 @@ const RECIPES = [
   },
   {
     id: 10, name: 'Baghali Polo', nameFA: 'باقالی پلو',
-    emoji: '🫘', category: 'rice', chef: 'louisa',
+    emoji: '🫘', category: 'rice', chef: 'louisa', calories: 450,
     image: 'https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=60&q=60',
     time: '2 hours', servings: 6, difficulty: 'Medium',
@@ -201,7 +201,7 @@ const RECIPES = [
   },
   {
     id: 11, name: 'Sabzi Polo ba Mahi', nameFA: 'سبزی پلو با ماهی',
-    emoji: '🐟', category: 'rice', chef: 'yasmin',
+    emoji: '🐟', category: 'rice', chef: 'yasmin', calories: 410,
     image: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=60&q=60',
     time: '2 hours', servings: 6, difficulty: 'Medium',
@@ -220,7 +220,7 @@ const RECIPES = [
   },
   {
     id: 12, name: 'Tahchin', nameFA: 'ته‌چین',
-    emoji: '🍰', category: 'rice', chef: 'najmieh',
+    emoji: '🍰', category: 'rice', chef: 'najmieh', calories: 480,
     image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=60&q=60',
     time: '2.5 hours', servings: 6, difficulty: 'Hard',
@@ -237,7 +237,7 @@ const RECIPES = [
   // === SOUPS ===
   {
     id: 13, name: 'Ash Reshteh', nameFA: 'آش رشته',
-    emoji: '🍜', category: 'soup', chef: 'rosa',
+    emoji: '🍜', category: 'soup', chef: 'rosa', calories: 320,
     image: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=60&q=60',
     time: '2.5 hours', servings: 8, difficulty: 'Medium',
@@ -257,7 +257,7 @@ const RECIPES = [
   },
   {
     id: 14, name: 'Aash-e Doogh', nameFA: 'آش دوغ',
-    emoji: '🥣', category: 'soup', chef: 'yasmin',
+    emoji: '🥣', category: 'soup', chef: 'yasmin', calories: 280,
     image: 'https://images.unsplash.com/photo-1604152135912-04a022e23696?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1604152135912-04a022e23696?w=60&q=60',
     time: '2 hours', servings: 6, difficulty: 'Easy',
@@ -273,7 +273,7 @@ const RECIPES = [
   },
   {
     id: 15, name: 'Aash-e Anar', nameFA: 'آش انار',
-    emoji: '🍎', category: 'soup', chef: 'louisa',
+    emoji: '🍎', category: 'soup', chef: 'louisa', calories: 310,
     image: 'https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?w=60&q=60',
     time: '2 hours', servings: 6, difficulty: 'Medium',
@@ -292,7 +292,7 @@ const RECIPES = [
   // === APPETIZERS ===
   {
     id: 16, name: 'Kuku Sabzi', nameFA: 'کوکو سبزی',
-    emoji: '🥚', category: 'appetizer', chef: 'rosa',
+    emoji: '🥚', category: 'appetizer', chef: 'rosa', calories: 220,
     image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=60&q=60',
     time: '45 min', servings: 4, difficulty: 'Easy',
@@ -312,7 +312,7 @@ const RECIPES = [
   },
   {
     id: 17, name: 'Dolmeh Barg Mo', nameFA: 'دلمه برگ مو',
-    emoji: '🍃', category: 'appetizer', chef: 'najmieh',
+    emoji: '🍃', category: 'appetizer', chef: 'najmieh', calories: 290,
     image: 'https://images.unsplash.com/photo-1529059997568-3d847b1154f0?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1529059997568-3d847b1154f0?w=60&q=60',
     time: '2.5 hours', servings: 6, difficulty: 'Hard',
@@ -330,7 +330,7 @@ const RECIPES = [
   },
   {
     id: 18, name: 'Mirza Ghasemi', nameFA: 'میرزا قاسمی',
-    emoji: '🍅', category: 'appetizer', chef: 'yasmin',
+    emoji: '🍅', category: 'appetizer', chef: 'yasmin', calories: 250,
     image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=60&q=60',
     time: '45 min', servings: 4, difficulty: 'Easy',
@@ -350,7 +350,7 @@ const RECIPES = [
   },
   {
     id: 19, name: 'Kashk-e Bademjan', nameFA: 'کشک بادمجان',
-    emoji: '🍆', category: 'appetizer', chef: 'rosa',
+    emoji: '🍆', category: 'appetizer', chef: 'rosa', calories: 280,
     image: 'https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?w=60&q=60',
     time: '1 hour', servings: 4, difficulty: 'Easy',
@@ -367,7 +367,7 @@ const RECIPES = [
   // === DESSERTS ===
   {
     id: 20, name: 'Sholeh Zard', nameFA: 'شله زرد',
-    emoji: '🍮', category: 'dessert', chef: 'rosa',
+    emoji: '🍮', category: 'dessert', chef: 'rosa', calories: 350,
     image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=60&q=60',
     time: '2 hours', servings: 8, difficulty: 'Easy',
@@ -387,7 +387,7 @@ const RECIPES = [
   },
   {
     id: 21, name: 'Faloodeh Shirazi', nameFA: 'فالوده شیرازی',
-    emoji: '🧊', category: 'dessert', chef: 'louisa',
+    emoji: '🧊', category: 'dessert', chef: 'louisa', calories: 260,
     image: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1501443762994-82bd5dace89a?w=60&q=60',
     time: '4+ hours', servings: 6, difficulty: 'Medium',
@@ -405,7 +405,7 @@ const RECIPES = [
   },
   {
     id: 22, name: 'Bastani Sonnati', nameFA: 'بستنی سنتی',
-    emoji: '🍨', category: 'dessert', chef: 'samin',
+    emoji: '🍨', category: 'dessert', chef: 'samin', calories: 320,
     image: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?w=60&q=60',
     time: '5+ hours', servings: 8, difficulty: 'Medium',
@@ -425,7 +425,7 @@ const RECIPES = [
   },
   {
     id: 23, name: 'Ranginak', nameFA: 'رانگینک',
-    emoji: '🍋', category: 'dessert', chef: 'najmieh',
+    emoji: '🍋', category: 'dessert', chef: 'najmieh', calories: 380,
     image: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&q=80',
     thumb: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=60&q=60',
     time: '1 hour', servings: 8, difficulty: 'Easy',
@@ -718,6 +718,7 @@ function Sidebar({ activeCategory, setActiveCategory, allRecipes, imgErrors, han
                   )}
                 </div>
                 <span style={s.sideSubText}>{r.name}</span>
+                <span style={{ fontSize: 10, color: '#ff9800', marginLeft: 'auto', flexShrink: 0 }}>{r.calories} kcal</span>
               </div>
             ))}
           </div>

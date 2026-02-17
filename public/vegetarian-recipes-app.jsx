@@ -246,7 +246,8 @@ function TreeNode(props) {
           onMouseLeave: function(e) { if (!isSelected) { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = '#aaa'; } }
         },
           React.createElement('span', { style: childDotStyle }),
-          React.createElement('span', { style: { overflow: 'hidden', textOverflow: 'ellipsis' } }, r.name)
+          React.createElement('span', { style: { overflow: 'hidden', textOverflow: 'ellipsis', flex: 1 } }, r.name),
+          React.createElement('span', { style: { fontSize: '10px', color: '#ff9800', flexShrink: 0, marginLeft: '4px' } }, r.nutrition.calories + ' kcal')
         );
       })
     )
