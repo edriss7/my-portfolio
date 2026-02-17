@@ -1730,6 +1730,45 @@ const CATS = [
   { key:'layout', label:'Layout' },
 ];
 
+function CodePanel({ comp }) {
+  const [show, setShow] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const code = comp.toString();
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(code).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
+
+  return (
+    <div>
+      <div style={{ display:'flex', justifyContent:'flex-end', marginTop:16 }}>
+        <button
+          onClick={() => setShow(!show)}
+          style={{ ...ui.btn, background: show ? 'rgba(255,255,255,0.12)' : 'rgba(255,255,255,0.06)', color: show ? '#64b5f6' : 'rgba(255,255,255,0.5)', border:'1px solid rgba(255,255,255,0.1)', fontSize:12 }}
+        >
+          {show ? '\u25BC Hide Code' : '\u25B6 Show Code'}
+        </button>
+      </div>
+      {show && (
+        <div style={{ marginTop:12 }}>
+          <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center', background:'#0d1117', padding:'8px 14px', borderRadius:'8px 8px 0 0', borderBottom:'1px solid rgba(255,255,255,0.08)' }}>
+            <span style={{ fontSize:11, color:'rgba(255,255,255,0.4)', fontWeight:600, textTransform:'uppercase', letterSpacing:0.5 }}>JSX</span>
+            <button onClick={handleCopy} style={{ ...ui.btn, ...ui.btnSm, background:'rgba(255,255,255,0.08)', color: copied ? '#4caf50' : 'rgba(255,255,255,0.5)', border:'none', fontSize:11 }}>
+              {copied ? '\u2713 Copied' : 'Copy'}
+            </button>
+          </div>
+          <pre style={{ background:'#0d1117', padding:'16px', borderRadius:'0 0 8px 8px', overflowX:'auto', margin:0, maxHeight:400, overflowY:'auto' }}>
+            <code style={{ fontSize:12, lineHeight:1.6, color:'#c9d1d9', fontFamily:"'Fira Code','Consolas','Monaco',monospace", whiteSpace:'pre' }}>{code}</code>
+          </pre>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function StorybookApp() {
   const [active, setActive] = useState('button');
   const [catFilter, setCatFilter] = useState('all');
@@ -1780,6 +1819,7 @@ function StorybookApp() {
         {catFilter === 'all' ? (
           <div style={s.demoPanel}>
             {current && React.createElement(current.comp)}
+            {current && <CodePanel comp={current.comp} />}
           </div>
         ) : (
           <div style={{display:'flex',flexDirection:'column',gap:20}}>
@@ -1787,6 +1827,7 @@ function StorybookApp() {
               <div key={comp.id} style={s.demoPanel}>
                 <h3 style={{color:'#fff',margin:'0 0 12px',fontSize:18}}>{comp.icon} {comp.name}</h3>
                 {React.createElement(comp.comp)}
+                <CodePanel comp={comp.comp} />
               </div>
             ))}
           </div>
