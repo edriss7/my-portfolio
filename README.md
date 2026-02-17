@@ -10,6 +10,36 @@ npm start
 # → http://localhost:8080
 ```
 
+## Run with Docker
+
+### Build and run
+
+```bash
+docker build -t my-portfolio .
+docker run -p 8080:8080 my-portfolio
+# → http://localhost:8080
+```
+
+### Run in the background
+
+```bash
+docker run -d -p 8080:8080 --name my-portfolio my-portfolio
+```
+
+### Stop and remove
+
+```bash
+docker stop my-portfolio
+docker rm my-portfolio
+```
+
+### Rebuild after changes
+
+```bash
+docker build -t my-portfolio .
+docker run -p 8080:8080 my-portfolio
+```
+
 ## Deploy to Google Cloud Platform
 
 ### Prerequisites
