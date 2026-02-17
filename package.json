@@ -1,0 +1,21 @@
+{
+  "name": "claude_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1",
+    "react": "^19.2.4"
+  },
+  "devDependencies": {
+    "react-dom": "^19.2.4",
+    "sass": "^1.97.3"
+  }
+}
